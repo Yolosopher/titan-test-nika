@@ -333,7 +333,7 @@ main {
     justify-content: space-between;
     flex-grow: 1;
 }
-.description {
+.descripxion {
     line-height: 22px;
     font-size: 15px;
     color: #111111;
@@ -374,6 +374,7 @@ main {
     padding: 80px 60px;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 90px;
 }
 .aboutus-txt {
     width: 40%;
@@ -404,4 +405,97 @@ main {
     padding: 14px 30px;
     background-color: #FF613B;
     border-radius: 4px;
+}
+
+/* footer */
+hr {
+    height: 1px;
+    opacity: .2;
+}
+footer {
+    height: 545px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+    ;
+    color: #fff;
+    font-family: Regular;
+    font-size: 12px;
+}
+footer::after {
+    content: '';
+    position: absolute;
+    background-color: #32125B;
+    height: 545px;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+.up-footer {
+    display: flex
+}
+footer h3 {
+    margin-bottom: 30px;
+}
+.first-part {
+    margin-top: 60px;
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+}
+.second-part {
+    margin-top: 60px;
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+}
+
+.logo-dscr {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.footer-cats {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.footer-menu {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.footer-social {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+footer a:any-link{
+    color: #fff;
+}
+
+.footer-soc-li {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.socc {
+    background-color: #5B417B;
+    padding: 15px 14px 14px 15px;
+    width: 48px;
+    height: 48px;
+    margin-right: 25px;
+}
+.socc img {
+    width: 19px;
+    height: 19px;
+}
+
+
+.licenses {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.licenses span {
+    color: #FF613B;
 }
