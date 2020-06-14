@@ -146,8 +146,12 @@ header::before {
 .ctgr-ul li {
     position: relative;
 }
+
 .ctgr-ul li a:any-link {
     color: #32125B;
+}
+.ctgr-ul li a:hover {
+    color: #FF613B;
 }
 .ctgr-ul li a::after {
     content: url(images/Layer\ 2.svg);
@@ -675,3 +679,5 @@ html body .banners-ul {
 html body .hidden {
     display: none;
 }
+
+
