@@ -293,7 +293,7 @@ main {
     color: #32125B;
     font-weight: 500;
 }
-.tp-heading p {
+.tp-heading a:any-link {
     font-family: Regular;
     font-size: 12px;
     line-height: 16px;
@@ -481,10 +481,15 @@ footer h3 {
     flex-basis: 0;
     flex-grow: 1;
 }
-
+.ftr-cats-li a:hover {
+    color: #FF613B;
+}
 .footer-menu {
     flex-basis: 0;
     flex-grow: 1;
+}
+.footer-menu-li a:hover {
+    color: #FF613B;
 }
 .footer-social {
     flex-basis: 0;
