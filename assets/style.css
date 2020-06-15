@@ -1,4 +1,3 @@
-/* fonts */
 @font-face {
     font-family: Caps;
     src: url(fonts/bpg-banner-caps-webfont.ttf);
@@ -172,6 +171,43 @@ main {
     flex-direction: column;
     width: calc(100% / 3 * 2);
 }
+main.sc-2 .huhuhaha {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 61px);
+}
+@media only screen and (min-width: 1191px) {
+    .pagination-monitor {
+        position: absolute;
+        text-align: center;
+        transition: .3s opacity;
+        transform: translate3d(0,0,0);
+        z-index: 10;
+        right: -30px;
+        bottom: 35%;
+        opacity: 1;
+    }
+}
+
+
+html body .swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 8px;
+    height: 16px;
+    display: block;
+    border-radius: 167px;
+    background: #EAE6EE;
+    opacity: initial;
+    outline: none;
+    margin-bottom: 8px;
+}
+html body .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 8px;
+    height: 32px;
+    opacity: 1;
+    display: block;
+    background: #32125B;
+    outline: none;
+}
     /* search bar */
 .srch-bar {
     width: 100%;
@@ -221,13 +257,23 @@ main {
     margin-right: 6px;
 }
     /* main background image */
-.main-photo {
+.main-photo-slider {
     width: 100%;
     border-radius: 15px;
     flex-grow: 1;
     overflow: hidden;
+    height: 100%;
 }
-
+.main-photo-each.swiper-slide {
+    height: 100%;
+    width: 100%;
+}
+.main-photo-each.swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
 
 /* Banners */
 .sliders {
@@ -612,6 +658,9 @@ html body .banners-ul {
 .resp-footer {
     display: none;
 }
+
+/* bobobobobobobo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 @media only screen and (max-width: 1190px) {
     body {
         padding: 0 -30px;
@@ -621,7 +670,33 @@ html body .banners-ul {
     .swiper-button-next {
         display: none;
     }
+
+    #pag {
+        bottom: -25px;
+        display: flex;
+        right: 39%;
+    }
+    html body .swiper-pagination-clickable .swiper-pagination-bullet {
+        width: 16px;
+        height: 4px;
+        display: block;
+        border-radius: 167px;
+        background: #EAE6EE;
+        opacity: initial;
+        outline: none;
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
+    html body .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        width: 32px;
+        height: 4px;
+        opacity: 1;
+        display: block;
+        background: #32125B;
+        outline: none;
+    }
 }
+
 @media only screen and (max-width: 830px) {
     body {
         padding: 0 10px;
@@ -712,7 +787,6 @@ html body .banners-ul {
     .respo-menu {
         display: flex;
     }
-
 }
 .srch-div {
     position: relative;

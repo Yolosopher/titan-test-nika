@@ -5,6 +5,14 @@ var swiper = new Swiper('.banners', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  }
+});
+// main photo slider
+var swiper = new Swiper('.main-photo-slider', {
+  direction: 'vertical',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
   on: {
     resize: function () {
@@ -12,11 +20,19 @@ var swiper = new Swiper('.banners', {
     }
   }
 });
-// top products slider
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = windowWidth <= 760 ? 'horizontal' : 'vertical';
+
+  return direction;
+}
 
 
 
 
+
+// top products
 let category = document.getElementById('srch-txt');
 let catUl = document.querySelector('.cat-toggle-ul');
 catUl.classList.toggle('hidden');
@@ -42,10 +58,5 @@ if (productsWidth < 200) {
 
 var swiper = new Swiper('.top-products-slider', {
   slidesPerView: 'auto',
-  direction: 'horizontal',
-  on: {
-    resize: function () {
-      swiper.changeDirection(getDirection());
-    }
-  }
+  direction: 'horizontal'
 });
