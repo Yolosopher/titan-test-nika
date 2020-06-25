@@ -573,7 +573,7 @@ footer a:any-link{
     align-items: center;
     justify-content: space-evenly;
     height: 70px;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100vw;
