@@ -7,24 +7,25 @@ var swiper = new Swiper('.banners', {
     prevEl: '.swiper-button-prev',
   }
 });
+
+
 // main photo slider
 var swiper = new Swiper('.main-photo-slider', {
-  direction: 'vertical',
+  direction: getDirection(),
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
   on: {
     resize: function () {
-      swiper.changeDirection(getDirection());
+      this.changeDirection(getDirection());
     }
   }
 });
 
 function getDirection() {
   var windowWidth = window.innerWidth;
-  var direction = windowWidth <= 760 ? 'horizontal' : 'vertical';
-
+  var direction = windowWidth < 1191 ? 'horizontal' : 'vertical';
   return direction;
 }
 
