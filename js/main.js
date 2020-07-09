@@ -10,7 +10,7 @@ var swiper = new Swiper('.banners', {
 
 
 // main photo slider
-var swiper = new Swiper('.main-photo-slider', {
+var swiper2 = new Swiper('.main-photo-slider', {
   direction: getDirection(),
   pagination: {
     el: '.swiper-pagination',
@@ -57,7 +57,7 @@ if (productsWidth < 200) {
   topProducts.classList.add('top-products-slider')
 };
 
-var swiper = new Swiper('.top-products-slider', {
+var swiper3 = new Swiper('.top-products-slider', {
   slidesPerView: 'auto',
   direction: 'horizontal'
 });
